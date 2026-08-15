@@ -1,0 +1,13 @@
+{
+  "name": "extension",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint src --ext .js",
+    "build": "echo 'no bundler yet — Day 2'"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "web-ext": "^7.11.0"
+  }
+}
