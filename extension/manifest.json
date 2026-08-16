@@ -4,11 +4,11 @@
   "version": "0.1.0",
   "description": "One-click summary of the page you're on.",
   "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://YOUR-BACKEND-DOMAIN-HERE/*"],
   "background": {
-    "service_worker": "src/background/index.js",
-    "scripts": ["src/background/index.js"]
+    "service_worker": "src/background/index.js"
   },
-    "browser_specific_settings": {
+  "browser_specific_settings": {
     "gecko": {
       "id": "instant-summary@reveriehacks.dev",
       "strict_min_version": "109.0"

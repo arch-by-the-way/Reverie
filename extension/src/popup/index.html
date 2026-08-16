@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="UTF-8"></head>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 320px;
+      padding: 16px;
+      font-family: system-ui, sans-serif;
+      font-size: 14px;
+    }
+    #loading { color: #666; }
+    #summary { line-height: 1.4; }
+    #error { color: #c0392b; }
+    .hidden { display: none; }
+  </style>
+</head>
 <body>
-  <div id="app">Loading…</div>
+  <div id="loading">Getting summary…</div>
+  <div id="summary" class="hidden"></div>
+  <div id="error" class="hidden">Couldn't get a summary. Try again.</div>
+
   <script src="index.js"></script>
 </body>
 </html>
